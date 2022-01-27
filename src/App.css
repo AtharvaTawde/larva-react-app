@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", monospace;
+  transition: 0.4s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  margin: 75px 75px 0 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.toggleDarkMode {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.r1 {
+  animation: r1 5s ease infinite alternate;
+}
+
+.r2 {
+  animation: r2 5s ease infinite alternate;
+}
+
+@keyframes r1 {
+  0% {
+    color: red;
+  }
+  
+
+  20% {
+    color: orange;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  60% {
+    color: lightgreen;
+  }
+
+  80% {
+    color: lightblue;
+  }
+
+  100% {
+    color: rgb(219, 124, 219);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes r2 {
+  0% {
+    color: red;
   }
-  to {
-    transform: rotate(360deg);
+  
+
+  20% {
+    color: darkorange;
+  }
+
+  40% {
+    color: rgb(228, 228, 27);
+  }
+
+  60% {
+    color: rgb(64, 184, 64);
+  }
+
+  80% {
+    color: rgb(51, 157, 192);
+  }
+
+  100% {
+    color: rgb(153, 75, 199);
   }
 }
